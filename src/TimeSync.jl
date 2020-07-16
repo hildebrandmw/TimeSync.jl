@@ -18,6 +18,6 @@ end # module Lib
 using .Lib
 
 cxxtime() = Lib.time_since_epoch()
-juliatime() = 1000 * (Dates.value(now()) - Dates.UNIXEPOCH)
+juliatime(time = now()) = 1000 * (Dates.value() - Dates.UNIXEPOCH)
 
 end

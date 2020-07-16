@@ -1,7 +1,7 @@
 using CxxWrap
 
 current_dir = @__DIR__
-cxxhome = CxxWrap.prefix_path()
+cxxhome = CxxWrap.prefix().path
 juliahome = dirname(Base.Sys.BINDIR)
 
 # Need to compile with the same compiler that nGraph is.
